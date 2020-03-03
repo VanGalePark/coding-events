@@ -2,8 +2,6 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body class="container">
-    <h1>All Events</h1>
-
     <nav th:replace="fragments :: navigation";></nav>
 
     <p th:unless="${events} and ${events.size()}">No events :C</p>
